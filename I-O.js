@@ -1,0 +1,5 @@
+var fs = require('fs')
+var cad = fs.readFileSync(process.argv[2])
+var str = cad.toString()
+var s = str.split("\n")
+console.log(s.length-1)
